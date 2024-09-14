@@ -8,11 +8,12 @@ Version Control Udacity
 
 ### Description
 Final project of the Udacity Course (Version Control). Working remotly
-with Github.
+with *Github*.
 
 ### Files used
-Include the files used
+Temporary. Files used: _readme.md, bikeshare_2.py_
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+[GitHub](www.github.com)
+[GitHowTo](www.githowto.com)
 
