@@ -7,7 +7,8 @@ Created at 14/09/2024, including README.md
 Version Control Udacity
 
 ### Description
-Describe what your project is about and what it does
+Final project of the Udacity Course (Version Control). Working remotly
+with Github.
 
 ### Files used
 Include the files used
