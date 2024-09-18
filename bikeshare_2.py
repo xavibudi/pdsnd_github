@@ -7,20 +7,43 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 # filters city, month and day
 def get_filters():
-    """
-    Asks user to specify a city, month, and day to analyze.
-    Returns:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    """
+    """Asks user to specify a city, month, and day to analyze."""
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    # get user input for month (all, january, february, ... , june)
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+    city = get_city()
+    month = get_month()
+    day = get_day()
 
     print('-'*40)
     return city, month, day
+
+def get_city():
+    """User select a city"""
+    while True:
+        city = input("Enter a city (New York City, Washington or Chicago)").lower()
+        if city in CITY_DATA:
+            return city
+        else:
+            print("Invalid city. Try again")
+
+def get_month():
+    """User select a month"""
+    months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
+    while True:
+        month = input("Enter a month (january, february,... june or all): ").lower()
+        if month in months:
+            return month
+        else:
+            print("Invalid month. Try again.")
+
+def get_day():
+    """User select a day"""
+    days = ['monday', 'tuesday', 'wednesday','thursday','friday','saturday','sunday','all']
+    while True:
+        day = input("Enter a day(monday, tuesday,wednesday...sunday), or enter 'all' if you want all days ").lower()
+        if day in days:
+            return day
+        else:
+            print("Invalid day. Try again")
 
 
 def load_data(city, month, day):
