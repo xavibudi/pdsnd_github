@@ -13,7 +13,7 @@ This project include the file bikeshare_2.py. This program focuses on pandas lib
 The results are shown on the screen various information like as popular day/month or the most common seasons.
 
 ##### How to use
-You can use the bikeshare file on Python.
+You can use the bikeshare file on Python. Enter the cities, month and day to obtain desired statistics
 ##### For Windows
 Open CMD on Windows, go to the folder where the file is, and execute this command:
     `python bikeshare_2.py`
